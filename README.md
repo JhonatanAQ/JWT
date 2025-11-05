@@ -51,7 +51,11 @@ Gere o cliente do Prisma:
 ```bash
 npx prisma generate
 ```
+Inicie o container docker do postgres:
 
+```bash
+docker-compose up -d
+```
 Execute as migrações do banco:
 
 ```bash
