@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+
+  db:
+    image: postgres:latest
+    container_name: study_jwt_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: code
+      POSTGRES_DB: study_jwt_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
